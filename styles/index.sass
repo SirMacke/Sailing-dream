@@ -12,7 +12,6 @@ html, body
   scroll-behavior: smooth
   -webkit-tap-highlight-color: transparent
   font-family: 'Lato', sans-serif
-  overflow-x: hidden
 
   section
     position: relative
@@ -21,6 +20,13 @@ html, body
     margin: 0
     padding: 0
     background-color: white
+
+    .header
+      font-size: 3.5em
+      color: black
+      text-align: center
+      text-transform: uppercase
+      margin: 50px 0px 0px 0px
 
   #home
     height: 100vh
@@ -176,3 +182,262 @@ html, body
       .icon:active
         i
           font-size: 1.25em
+
+
+  #adventures
+
+    #container
+      display: flex
+      flex-direction: column
+      position: relative
+      width: 1500px
+      margin: 100px 0px 50px 0px
+      left: 50%
+      transform: translateX(-50%)
+
+      #place2
+        flex-direction: row-reverse
+
+      .place
+        display: flex
+        flex-direction: row
+        margin-bottom: 50px
+        height: 450px
+
+        .image
+          display: flex
+          flex-direction: row
+          width: auto
+          height: 430px
+
+          img
+            position: relative
+            width: 450px
+            height: 100%
+            object-fit: cover
+            border: 10px solid #007fff
+            border-radius: 25px
+
+          i
+            position: relative
+            font-size: 7.5em
+            color: #007fff
+            margin: 0px
+            top: 150px
+
+          #left-icon
+            margin-left: -5px
+
+          #right-icon
+            margin-right: -5px
+
+        #text1
+          margin-left: 25px
+
+        #text2
+          margin-right: 25px
+
+        .text
+          color: black
+          width: 600px
+
+          h3
+            position: relative
+            width: 90%
+            margin: 30px 0px 20px 0px
+            left: 50%
+            transform: translateX(-50%)
+            font-size: 1.75em
+
+          #right-h3
+            text-align: right
+
+          .line
+            position: relative
+            height: 5px
+            width: 95%
+            background-color: #007fff
+            left: 50%
+            transform: translateX(-50%)
+
+          p
+            position: relative
+            width: 90%
+            margin: 20px 0px
+            left: 50%
+            transform: translateX(-50%)
+            font-size: 1.1em
+
+          #right-p
+            text-align: right
+
+          h5
+            position: relative
+            width: 90%
+            margin: 10px 0px
+            left: 50%
+            transform: translateX(-50%)
+            font-size: 1em
+            font-weight: bold
+
+          #right-h5
+            text-align: right
+
+
+  #about
+    background-color: black
+
+    .header
+      position: relative
+      padding-top: 150px
+      color: white
+
+    img
+      position: absolute
+      width: 100%
+      height: 100%
+      object-fit: cover
+      opacity: 0.5
+
+    p
+      position: relative
+      width: 40%
+      font-size: 1.25em
+      text-align: center
+      margin-top: 35px
+      padding-bottom: 150px
+      left: 50%
+      transform: translateX(-50%)
+
+  #forum
+
+    #container
+      display: grid
+      grid-template-columns: 1fr 1fr
+
+      #left
+        display: flex
+        flex-direction: column
+
+        .header
+          text-align: left
+          padding-left: 16%
+          padding-top: 200px
+          padding-bottom: 10px
+
+        .line
+          position: relative
+          background-color: #007fff
+          width: 67%
+          height: 5px
+          left: 15%
+
+        p
+          width: 65%
+          color: black
+          padding-left: 16%
+          margin: 25px 0px 300px 0px
+          font-size: 1.25em
+
+      #right
+        display: flex
+        flex-direction: column
+        position: relative
+        height: 85%
+        width: 75%
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        background-color: black
+        border-radius: 15px
+        margin-bottom: 75px
+
+        img
+          position: absolute
+          width: 100%
+          height: 100%
+          object-fit: cover
+          opacity: 0.75
+          border-radius: 15px
+
+        #search
+          display: flex
+          flex-direction: row
+          position: absolute
+          width: 55%
+          height: 60px
+          left: 50%
+          top: 40%
+          transform: translate(-50%, -50%)
+
+          input
+            width: 90%
+            height: 75%
+            border: 6px solid #007fff
+            border-radius: 10px 0px 0px 10px
+            padding-left: 7.5px
+            font-size: 0.9em
+
+          input:focus
+            outline: none
+
+          .icon
+            width: 50px
+            height: 48px
+            background-color: #007fff
+            border: 6px solid #007fff
+            border-radius: 0px 10px 10px 0px
+            margin: 0px 0px 0px -1px
+
+            i
+              position: relative
+              left: 45%
+              top: 50%
+              transform: translate(-50%, -50%)
+              font-size: 1.25em
+              transition: 0.25s
+
+          .icon:hover
+            i
+              font-size: 1.3em
+              cursor: pointer
+
+          .icon:active
+            i
+              font-size: 1.1em
+
+        p
+          position: relative
+          text-align: center
+          color: white
+          font-size: 1.5em
+          top: 49%
+          transform: translateY(-50%)
+          margin: 0px
+          text-shadow: 0px 0px 5px black
+
+        button
+          position: absolute
+          width: 200px
+          left: 50%
+          top: 60%
+          transform: translate(-50%, -50%)
+          padding: 15px
+          background-color: #007fff
+          border: 5px solid #007fff
+          border-radius: 10px
+          transition: 0.25s
+          font-size: 1em
+          color: white
+
+        button:hover
+          font-size: 1.1em
+          width: 210px
+          cursor: pointer
+
+        button:active
+          font-size: 0.9em
+          width: 190px
+
+        button:focus
+          outline: none
